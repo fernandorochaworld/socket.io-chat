@@ -8,12 +8,12 @@ app.use(cors());
 const server = http.createServer(app.callback());
 const io = socketIo(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "*",
         methods: ["GET", "POST"]
     }
 });
 
-const SERVER_HOST = 'localhost';
+const SERVER_HOST = '0.0.0.0';
 const SERVER_PORT = 8080;
 
 

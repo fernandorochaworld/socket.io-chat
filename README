@@ -1,0 +1,3 @@
+# Socket.io Chat, with react for client application and node.js as server.
+
+docker-compose up --build
